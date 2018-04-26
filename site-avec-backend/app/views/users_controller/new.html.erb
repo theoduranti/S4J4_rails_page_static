@@ -1,0 +1,14 @@
+<h1>UsersController#new</h1>
+<p>Bienvenu dans la création d'utilisateurs </p>
+
+<form action="<%= create_user_path %>" method="POST">
+    <p>Quel est le nom d'utilisateur</p>
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>" >
+    <input type="text" name="username">
+    </br></br>
+    <p>Quel est sa bio</p>
+    <input type="textarea" name="bio">
+    </br></br>
+    <p>Oublies pas de valider</p>
+    <input type="submit" name="Send">
+</form>
