@@ -6,7 +6,6 @@ class UsersControllerController < ApplicationController
     user.username = params["username"]
     user.bio = params["bio"]
     user.save
-    redirect_to "http://localhost:3000/home"
-    #redirect_to "<%= h_path %>"
+    redirect_to home_path
   end
 end
